@@ -28,3 +28,7 @@ You will get an HTML response.
 > retrieve the data from the API and update the page dynamically. If you load the page
 > in your browser, this process is transparent to the user, but if you load the HTML page from the API
 > you will only retrieve an unfilled template response.
+> 
+> Since all the data you would retrieve from scraping the HTML is available in the
+> JSON-LD response, it is highly recommended that you use the API. If there is something
+> that you are not finding in the API, [please let us know](https://github.com/rism-digital/rism-online-issues/issues/).
