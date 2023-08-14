@@ -13,7 +13,10 @@ references to all data that RISM publish.
 The JSON-LD response can be requested from the RISM Online server by passing an `Accept` header with 
 `application/ld+json` as the value to the request. If you have access to the command-line `curl` tool:
 
-    $ curl -H "Accept: application/ld+json" https://rism.online/sources/1001145660
+```shell
+$ curl -H "Accept: application/ld+json" https://rism.online/sources/1001145660
+```
+
 
 Other tools, such as the [Talend API Tester](https://chrome.google.com/webstore/detail/talend-api-tester-free-ed/aejoelaoggembcahagimdiliamlcdmfm?hl=en) 
 Google Chrome plugin provide a graphical interface to the API and the responses.
@@ -25,13 +28,17 @@ related to them. This is an implementation of the [Search API](search-api.md), w
 `source` mode, but where all the same filters and sorting mechanisms apply, and the response has the same structure.
 This can be accessed by appending `/sources` to the URL of the resource URL:
 
-    $ curl -H "Accept: application/ld+json" https://rism.online/people/51160/sources
+```shell
+$ curl -H "Accept: application/ld+json" https://rism.online/people/51160/sources
+```
 
 Source resources have a similar interface, but they allow for searching the "contents" of a collection: Source records
 that hold information about the individual contents of a source. This can be accessed by appending `/contents` to the
 end of the resource URL:
 
-    $ curl -H "Accept: application/ld+json" https://rism.online/sources/450060716/contents
+```shell
+$ curl -H "Accept: application/ld+json" https://rism.online/sources/450060716/contents
+```
 
 ## JSON-LD Expansion (Experimental)
 

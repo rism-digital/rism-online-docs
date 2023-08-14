@@ -6,6 +6,28 @@
 The available filters for the Sources mode are:
 
 
+#### Hide DIAMM records
+
+The active value indicates the value that should be passed to activate the toggle. Toggles may be
+used to filter results out of a list (an active value of `false`) or indicate that only results matching a filter 
+should be kept (an active value of `true`).
+
+Alias
+: `hide-diamm-records`
+
+Type
+: `toggle`
+
+Values
+: Boolean, `true` or `false`.
+
+Active value
+: `none`.  
+
+Example
+: `?fq=hide-diamm-records:false`
+
+
 #### Hide source contents
 
 The active value indicates the value that should be passed to activate the toggle. Toggles may be
@@ -506,6 +528,28 @@ Example
 : `?fq=related-institutions:Mozart*`
 
 
+#### Anonymous creator
+
+The active value indicates the value that should be passed to activate the toggle. Toggles may be
+used to filter results out of a list (an active value of `false`) or indicate that only results matching a filter 
+should be kept (an active value of `true`).
+
+Alias
+: `has-anonymous-creator`
+
+Type
+: `toggle`
+
+Values
+: Boolean, `true` or `false`.
+
+Active value
+: `true`.  
+
+Example
+: `?fq=has-anonymous-creator:false`
+
+
 
 ### Sorting
 
@@ -540,12 +584,41 @@ Alias
 
 
 
+#### Composer
+
+Alias
+: `composer-order`
+
+
+
 
 ## People Mode
 
 ### Filters
 
 The available filters for the People mode are:
+
+
+#### Hide DIAMM records
+
+The active value indicates the value that should be passed to activate the toggle. Toggles may be
+used to filter results out of a list (an active value of `false`) or indicate that only results matching a filter 
+should be kept (an active value of `true`).
+
+Alias
+: `hide-diamm-records`
+
+Type
+: `toggle`
+
+Values
+: Boolean, `true` or `false`.
+
+Active value
+: `none`.  
+
+Example
+: `?fq=hide-diamm-records:false`
 
 
 #### Dates
@@ -717,6 +790,28 @@ Alias
 The available filters for the Institutions mode are:
 
 
+#### Hide DIAMM records
+
+The active value indicates the value that should be passed to activate the toggle. Toggles may be
+used to filter results out of a list (an active value of `false`) or indicate that only results matching a filter 
+should be kept (an active value of `true`).
+
+Alias
+: `hide-diamm-records`
+
+Type
+: `toggle`
+
+Values
+: Boolean, `true` or `false`.
+
+Active value
+: `none`.  
+
+Example
+: `?fq=hide-diamm-records:false`
+
+
 #### City
 
 For select facets, you can change the behaviour of the facet with the `fb` parameter, which takes the
@@ -763,6 +858,74 @@ Active value
 
 Example
 : `?fq=has-siglum:false`
+
+
+#### Sigla
+
+Alias
+: `sigla`
+
+Type
+: `query`
+
+Values
+: A fixed value, or a value using a wildcard to retrieve all matching values. For example, a value of `Mozart*` will
+filter the results for any results in this field that start with `Mozart` but vary in their ending. 
+
+Example
+: `?fq=sigla:Mozart*`
+
+
+#### Role
+
+For select facets, you can change the behaviour of the facet with the `fb` parameter, which takes the
+alias and a value of either `intersection` or `union`. For example:
+ 
+    ?fq=roles:"Some value"&fq=roles:"Some other value"&fb=roles:union
+
+This would change the behaviour of the select facet to choose records with either the first or the second (a.k.a "OR")
+rather than records with both values (a.k.a. "AND"). 
+
+Alias
+: `roles`
+
+Type
+: `select`
+
+Values
+: Any string value 
+
+Default behaviour
+: `intersection`
+
+Default sort
+: `count`
+
+
+#### Number of sources
+
+For select facets, you can change the behaviour of the facet with the `fb` parameter, which takes the
+alias and a value of either `intersection` or `union`. For example:
+ 
+    ?fq=number-sources:"Some value"&fq=number-sources:"Some other value"&fb=number-sources:union
+
+This would change the behaviour of the select facet to choose records with either the first or the second (a.k.a "OR")
+rather than records with both values (a.k.a. "AND"). 
+
+Alias
+: `number-sources`
+
+Type
+: `select`
+
+Values
+: Any string value 
+
+Default behaviour
+: `intersection`
+
+Default sort
+: `count`
 
 
 

@@ -11,7 +11,9 @@ we do not capture the language they used for a specific field.
 
 In this case, the language map provided might look something like this:
 
+```json
     "value": {"none": ["Some value"]}
+```
 
 The value of `none` indicates that the language content of `Some value` is unspecified.
 

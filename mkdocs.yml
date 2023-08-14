@@ -12,7 +12,16 @@ nav:
       - "Search options by Mode": api/modes.md
       - "Multilingual Support": api/languages.md
   - Reconciliation:
+      - "Introduction": reconciliation/introduction.md
 
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
 
 theme:
   name: material
