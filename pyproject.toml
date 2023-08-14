@@ -6,7 +6,7 @@ authors = ["Andrew Hankinson <andrew.hankinson@rism.digital>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.9"
 mkdocs = "^1.5.2"
 mkdocs-gitbook = "^0.0.1"
 mkdocs-material = "^9.1.21"
