@@ -61,3 +61,21 @@ of notes fields, separate paragraphs. So, you may find an entry like this:
 ```
 
 When displaying this, it would be appropriate to display all the values in the list.
+
+## Controlling Languages in the API
+
+It is possible to restrict the languages that are returned by the API in the JSON response. This may be useful if you are only interested in a single translation of the data, or if you find that downloading all translations adds a significant amount of complexity to parsing the return. 
+
+The HTTP header `X-API-Accept-Language` accepts a comma-separated list of language codes, or an asterisk (`*`) for all languages. (Returning all languages is also the default if no header is included in the request.) If provided, this will only include the requested languages in
+all language maps. (The `none` value in language maps is always included regardless of requested language.)
+
+Currently the acceptable language values are:
+
+ - `de`: German
+ - `en`: English
+ - `es`: Spanish
+ - `fr`: French
+ - `it`: Italian
+ - `pl`: Polish
+ - `pt`: Portugese
+

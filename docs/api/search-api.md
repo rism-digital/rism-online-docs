@@ -15,11 +15,15 @@ by the selected mode -- for example, you cannot perform an incipit search, using
 
 If no mode is explicitly set, the default is `sources`.
 
+An auto-generated list of the available filters per mode is available in the [Modes section](modes.md) of this documentation. This listing will tell you what filters and queries are available for each mode, what the parameter is you would use in the URL, what data types you can apply to that filter, and how the behaviours of the filters can be altered with other parameters.
+
 ### Query
 
 The Query parameter, `q`, is a non-repeatable query argument; only one `q` value may be provided in any string of
 query parameters. This will perform a full-text keyword search on the documents that are limited by the mode; so,
 a `q` parameter will perform a keyword search on all source documents when the sources mode is selected.
+
+The `q` parameter is available in all modes.
 
 ### Filters
 
@@ -171,3 +175,9 @@ sort field is also provided.
 #### `pageSizes`
 
 A list of valid page size values.
+
+## Probes
+
+A "probe" is a method used to perform a search, but will retrieve no results. This is used to determine a count of the number of documents that would be returned, should that search (with all its filters and queries) be applied. As it returns no results, it is much faster to apply and so can be used to give immediate feedback to users as they build their search queries.
+
+Probe queries support all filters and queries that are also supported by the main Search API. The probe handler is accessed through the `/probe` endpoint.

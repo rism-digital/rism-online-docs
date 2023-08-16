@@ -7,6 +7,7 @@ nav:
   - API:
       - "Using the API": api/api.md
       - "The Search API": api/search-api.md
+      - "Incipit Search": api/incipit-search.md
       - "The Resource API": api/resource-api.md
       - "Routes": api/routes.md
       - "Search options by Mode": api/modes.md
