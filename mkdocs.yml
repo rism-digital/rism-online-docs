@@ -14,6 +14,7 @@ nav:
       - "Multilingual Support": api/languages.md
   - Reconciliation:
       - "Introduction": reconciliation/introduction.md
+      - "The RISM Online Reconciliation Service": reconciliation/service.md
 
 markdown_extensions:
   - pymdownx.highlight:
