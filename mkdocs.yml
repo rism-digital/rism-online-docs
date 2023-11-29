@@ -1,4 +1,4 @@
-site_name: RISM Online
+site_name: RISM Online Documentation
 site_url: https://rism.online/docs/
 exclude_docs: |
   generate_route_docs.py
@@ -12,7 +12,7 @@ nav:
       - "Routes": api/routes.md
       - "Search options by Mode": api/modes.md
       - "Multilingual Support": api/languages.md
-  - Reconciliation:
+  - "Reconciliation Service":
       - "Introduction": reconciliation/introduction.md
       - "The RISM Online Reconciliation Service": reconciliation/service.md
 
@@ -28,16 +28,6 @@ markdown_extensions:
 theme:
   name: material
   palette:
-    # Palette toggle for light mode
-    - scheme: default
-      primary: "blue grey"
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-
-    # Palette toggle for dark mode
-    - scheme: slate
-      primary: blue grey
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
+    scheme: rism
+extra_css:
+  - stylesheets/extra.css
