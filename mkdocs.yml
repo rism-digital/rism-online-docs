@@ -8,10 +8,12 @@ nav:
       - "Using the API": api/api.md
       - "The Search API": api/search-api.md
       - "Incipit Search": api/incipit-search.md
+      - "Incipit Download": api/incipit-download.md
       - "The Resource API": api/resource-api.md
       - "Routes": api/routes.md
       - "Search options by Mode": api/modes.md
       - "Multilingual Support": api/languages.md
+      - "Sigla API": api/sigla-api.md
   - "Reconciliation Service":
       - "Introduction": reconciliation/introduction.md
       - "The RISM Online Reconciliation Service": reconciliation/service.md
