@@ -17,9 +17,18 @@ The JSON-LD response can be requested from the RISM Online server by passing an 
 $ curl -H "Accept: application/ld+json" https://rism.online/sources/1001145660
 ```
 
-
 Other tools, such as the [Talend API Tester](https://chrome.google.com/webstore/detail/talend-api-tester-free-ed/aejoelaoggembcahagimdiliamlcdmfm?hl=en) 
 Google Chrome plugin provide a graphical interface to the API and the responses.
+
+For source, person, and institution records, RISM Online can deliver the underlying MARC XML record as well. This can
+be done simply by altering the `Accept` header to ask for the record with the media type of `application/marcxml+xml`, 
+e.g.:
+
+```shell
+curl -H "Accept: application/marcxml+xml" https://rism.online/sources/1001145660
+```
+
+Requesting a URL that does not have an underlying MARC record will return a `406 Not Acceptable` HTTP Status Code.
 
 ## Searching a resource
 

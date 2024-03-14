@@ -35,12 +35,23 @@ You will get an HTML response.
 
 ## Search and Resource APIs
 
-There are two sections of the RISM Online API. The [Search API](search-api.md) provides a method of interacting with the RISM Online search system. With this API users can apply queries and filters to retrieve lists of results for all records accessible in RISM Online. Results in the Search API are returned in JSON-LD, so they may be parsed and manipulated as needed.
+There are two sections of the RISM Online API. The [Search API](search-api.md) provides a method of interacting with the RISM 
+Online search system. With this API users can apply queries and filters to retrieve lists of results for all records 
+accessible in RISM Online. Results in the Search API are returned in JSON-LD, so they may be parsed and manipulated 
+as needed.
 
-The second section, the [Resource API](resource-api.md) provides users with the ability to retrieve JSON-LD representations of records in RISM Online. With these representations users may extract any and all data from RISM records that they may be interested in.
+The second section, the [Resource API](resource-api.md) provides users with the ability to retrieve JSON-LD representations of 
+records in RISM Online. With these representations users may extract any and all data from RISM records that they may 
+be interested in.
 
-It may be useful to note that the [RISM Online web interface](https://rism.online) uses the same public APIs described here. Any data you see in the web interface can be found using the public APIs. Almost all URLs in the public interface also have a machine-readable counterpart, allowing users to experiment with their searches in the user interface, and then move their experiments into code later on. Notably, this includes the incipit search. 
+It may be useful to note that the [RISM Online web interface](https://rism.online) uses the same public APIs described 
+here. Any data you see in the web interface can be found using the public APIs. Almost all URLs in the public interface
+also have a machine-readable counterpart, allowing users to experiment with their searches in the user interface, and 
+then move their experiments into code later on. Notably, this includes the incipit search. 
 
 ## Multi-Lingual Support
 
-To help ensure a consistent set of terminology across all languages for RISM resources, the API delivers all content with JSON-LD Language Maps. This provides API users with a mechanism for showing human-readable labels for RISM data in their own systems, using terminology consistent with RISM itself. This is covered in the [languages documentation](languages.md).
+To help ensure a consistent set of terminology across all languages for RISM resources, the API delivers all content
+with JSON-LD Language Maps. This provides API users with a mechanism for showing human-readable labels for RISM data 
+in their own systems, using terminology consistent with RISM itself. This is covered in the 
+[languages documentation](languages.md).
