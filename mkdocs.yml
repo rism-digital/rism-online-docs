@@ -5,7 +5,7 @@ exclude_docs: |
 nav:
   - Home: index.md
   - "Query Builder":
-      - "Documentation and Examples":
+      - "Documentation and Examples": query-builder/introduction.md
   - API:
       - "Using the API": api/api.md
       - "The API Viewer": api/api-viewer.md
