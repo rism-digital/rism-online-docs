@@ -4,6 +4,8 @@ exclude_docs: |
   generate_route_docs.py
 nav:
   - Home: index.md
+  - "Query Builder":
+      - "Documentation and Examples":
   - API:
       - "Using the API": api/api.md
       - "The API Viewer": api/api-viewer.md
