@@ -49,5 +49,5 @@ Terms, phrases, and fields can be grouped together with parentheses to provide w
 ## Examples
 
 - `watermark:anchor creator:Mozart -Breitkopf`: Retrieve sources with the term 'anchor' in the watermark field, where the creator has the term "Mozart", but the term "Breitkopf" is not in the record.
-- 
+ 
 
