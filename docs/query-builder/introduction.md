@@ -48,6 +48,8 @@ Terms, phrases, and fields can be grouped together with parentheses to provide w
 
 ## Examples
 
+- `series:2640 AND creator:Pleyel`: Search the RISM Series field for the RISM identifier '2640', where "Pleyel" is listed as the primary composer. 
 - `watermark:anchor creator:Mozart -Breitkopf`: Retrieve sources with the term 'anchor' in the watermark field, where the creator has the term "Mozart", but the term "Breitkopf" is not in the record.
+- `creator:Wein*`: Retrieve all records where the creator name matches "Wein..." with any ending.
  
 
