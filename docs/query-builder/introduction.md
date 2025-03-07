@@ -8,7 +8,7 @@ The Query Builder tool helps guide users in creating expressive queries for sear
 
 There are two broad types of query: A **term** query, and a **phrase** query. A term query is one or more words in the Keyword Query field. This will be interpreted with an implicit "AND" between each term. An example might be: `beethoven opera fidelio`. When the search system interprets this query, it will look for records that contain the words `beethoven` AND `opera` AND `fidelio` anywhere in the record. At the time of writing, this search returns around 200 results.
 
-By contrast, a phrase query is enclosed in quotation marks and looks for a specific sequence of words together. (They must be the double quotation marks -- single marks are not supported.) The same query as above, entered as a phrase query, returns no results. However, if we take the phrase `"Erste Bearbeitung, mit Korrekturen von der Hand"`, this will return exactly one record that contains this phrase. 
+By contrast, a phrase query is enclosed in quotation marks and looks for a specific sequence of words together. (They must be the double quotation marks -- single marks are not supported.) The same query as above, entered as a phrase query, returns no results. However, if we take the phrase `"Erste Bearbeitung, mit Korrekturen von der Hand"`, this will return the record(s) that contain this exact phrase. 
 
 ## Searching specific fields
 
